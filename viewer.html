@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>A simple three.js 3D viewer app.</title>
+    <link rel="stylesheet" href="css/viewer.css" />
+  </head>
+  <body>
+    <header>
+      <h1>A simple three.js 3D viewer app</h1>
+    </header>
+
+    <main>
+      <div id="container3D"></div>
+    </main>
+
+    <!-- Zoom Buttons -->
+    <div id="zoom-buttons">
+      <button id="zoom-in-button">Zoom In</button>
+      <button id="zoom-out-button">Zoom Out</button>
+    </div>
+    
+
+    <div id="container3D"></div>
+    <div id="model-selector" class="model-selector">
+      <label for="model-dropdown">Select Model:</label>
+      <select id="model-dropdown">
+        <option value="eye">Eye</option>
+        <option value="dino">Dino</option>
+        <option value="phoenix">Phoenix</option>
+      </select>
+    </div>
+
+
+
+
+    <script type="module" src="js/viewer.js"></script>
+  </body>
+</html>
